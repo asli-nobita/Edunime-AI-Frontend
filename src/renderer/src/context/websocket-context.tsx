@@ -7,6 +7,8 @@ const BASE_URL = import.meta.env.VITE_API_URL || "https://edunime-ai.onrender.co
 const DEFAULT_WS_URL = BASE_URL.replace("https://", "wss://") + "/client-ws";
 const DEFAULT_BASE_URL = BASE_URL;
 
+console.log(import.meta.env.VITE_API_URL); // debugging
+
 export interface HistoryInfo {
 	uid: string;
 	latest_message: {
